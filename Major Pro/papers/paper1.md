@@ -89,7 +89,6 @@
     - Denoising improves overall image clarity
     - Non-denoised data preserves fine details
 
-
 ### 🔹 Common Problems in Generated Images
 - Artifacts
 - Extra teeth rows

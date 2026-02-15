@@ -14,8 +14,6 @@ The proposed system is an end-to-end deep learning + computer vision framework f
 - 5️⃣ Axial Inclination Angle Calculation
 - 6️⃣ Statistical Validation
 
-
-
 ### 🔥 Final Architecture Summary (Exam Ready)
 👉 Mask R-CNN for instance tooth segmentation
 👉 Morphological processing + CCA for midpoint extraction
@@ -23,3 +21,5 @@ The proposed system is an end-to-end deep learning + computer vision framework f
 👉 Dentist-defined reference plane
 👉 Automated mesiodistal axial inclination measurement
 👉 Statistical validation against manual method
+
+
