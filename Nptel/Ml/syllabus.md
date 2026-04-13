@@ -12,3 +12,6 @@ Week 9: Undirected Graphical Models, HMM, Variable Elimination, Belief Propagati
 Week 10: Partitional Clustering, Hierarchical Clustering, Birch Algorithm, CURE Algorithm, Density-based Clustering
 Week 11: Gaussian Mixture Models, Expectation Maximization
 Week 12: Learning Theory, Introduction to Reinforcement Learning, Optional videos (RL framework, TD learning, Solution Methods, Applications)
+
+
+https://drive.google.com/drive/folders/1z8lpWtutGEFT95sxOwjWAZr8FMLu-MVU?usp=sharing
