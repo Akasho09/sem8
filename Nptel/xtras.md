@@ -4,7 +4,6 @@
 3. nlp.....nptel assignments..... departmental sessional 1 and departmental assignment 1 ...
 4. ML 
 
-
 ## 
 
 1. 4 May : CEN-805-S: Cryptography and Network Security
