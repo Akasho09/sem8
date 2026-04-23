@@ -10,5 +10,10 @@
     - The last hash is duplicated
     - Then paired with itself and hashed
 
+##  Merkle Tree and Hash pointers 
+> Merkle Tree → secures transactions within a block
+> Hash pointers (prev hash) → secure blocks across the chain
 
+## a) Safety ensures transactions are irreversible, while Liveness ensures transactions are eventually added.
 
+ 
