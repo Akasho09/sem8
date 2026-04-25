@@ -7,7 +7,7 @@
 
 1. 🔷 Step 1: Model Form
 Multiple Linear Regression:
-y=β0​+β1​x1​+β2​x2​
+> y=β0​+β1​x1​+β2​x2​
 
 2. 🔷 Step 2: Matrix Representation
 Design Matrix X

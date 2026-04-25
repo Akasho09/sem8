@@ -56,3 +56,19 @@ Can become unstable (values keep fluctuating)
 | **Error Rate**                | (\frac{FP + FN}{Total})                                     | Total mistakes                              |
 | **False Positive Rate (FPR)** | (\frac{FP}{FP + TN})                                        | Type I error                                |
 | **False Negative Rate (FNR)** | (\frac{FN}{FN + TP})                                        | Type II error                               |
+
+## 🔥 Which metric is NOT good here?
+- 👉 Accuracy is NOT a good evaluation metric
+- Why?
+This is a real-world problem (water shortage) → missing a shortage (FN) is serious.
+Accuracy treats all errors equally.
+It may give high value even if important cases are misclassified.
+
+- 👉 Example here:
+- FN = 5 (schools wrongly predicted as no shortage ❗)
+- This is critical but accuracy still looks high (90%)
+- ✅ Better Metrics:
+Recall → ensures we catch most shortage cases
+> F1 Score → balances precision & recall
+
+## 
