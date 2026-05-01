@@ -14,7 +14,6 @@
 1.  Precision
 - 👉 How many predicted positives are actually correct
 > Precision= TP /(TP​ + FP)
-
 2. Recall
 - 👉 How many actual positives are correctly identified
 > Recall  = TP / (TP+FN)
