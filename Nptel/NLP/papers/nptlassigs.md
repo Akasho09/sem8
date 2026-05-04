@@ -12,6 +12,7 @@ computate → comput (remove -ate)
 - A consonant is a letter other than A E I O U and Y which isnt proceceed by consonant.
 - EXMAPLE : 
 SYZYGY ==> consonsnts are S Z and G .
+> consonant + Y => vowel.
 
 - Words are represneted as :
 > C (VC)^m V
@@ -19,9 +20,7 @@ SYZYGY ==> consonsnts are S Z and G .
 - 👉 It counts vowel-consonant patterns in a word
 - This helps decide whether to remove a suffix or not
 
-
 ## 
-
 | Original Word | Stemmed Word |
 | ------------- | ------------ |
 | The           | the          |

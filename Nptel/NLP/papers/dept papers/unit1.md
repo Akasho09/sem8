@@ -35,7 +35,6 @@ P=P(i)⋅P(want∣i)⋅P(to∣want)⋅P(eat∣to)⋅P(English∣eat)⋅P(food∣
 The lazy dog sleeps all day.
 The quick brown fox never jumps over the sleeping cat.”
 
-
 1. 🔹 (ii) Probability of Sentence
 “The quick brown fox jumps over the sleeping cat”
 > P=P(The)⋅P(quick∣The)⋅P(brown∣The,quick)⋅P(fox∣quick,brown)
