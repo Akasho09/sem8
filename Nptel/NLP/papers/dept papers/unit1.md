@@ -41,9 +41,18 @@ The quick brown fox never jumps over the sleeping cat.”
 > P=2/3​×1/3​=1/33​≈0.333
 - start from word 0 , which isnt a case if directly probability is needed to be calculated.
 
-3. (iii) Perplexity
+3. (iii) 
+- Perplexity (PP) measures how well a language model predicts a sequence of words.
+👉 Lower perplexity = better model
+👉 Higher perplexity = more “confused” model
+- 📌 Why perplexity?
+✔ Measures how well model predicts
+✔ Lower = better
+✔ Equivalent to average branching factor
 - Using:
     > PP=P^-1/N
+    or 
+    > PP = 1/P^1/N
 - Where:
 P = 1/3
 N=9 words
@@ -282,5 +291,29 @@ lower→[low,er]
 
 
 
+## 🔹 3. Why F1 > Accuracy (Imbalanced Data)
+- 📌 Problem with Accuracy:
+Dominated by majority class
+Can be misleading
+- 📌 Example:
+95% negatives → model predicts all negative
+Accuracy = 95% ❌ but useless
+- 📌 Why F1 is better:
+✔ Focuses on TP, FP, FN
+✔ Ignores TN dominance
+✔ Balances precision & recall
 
+
+## 6. Distant Supervision
+- Use external knowledge bases (e.g., DBpedia) to automatically label data
+- ✅ Advantages:
+✔ No manual labeling needed
+✔ Scalable to large datasets
+✔ Fast training data generation
+- ❌ Limitations:
+❌ Noisy labels
+Not all sentences expressing entity pairs imply relation
+❌ Wrong assumptions
+“If entities appear → relation exists” (not always true)
+❌ Lower precision
 

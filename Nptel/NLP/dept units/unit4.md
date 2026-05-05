@@ -27,7 +27,15 @@ If rarely together → PMI is negative
 
 - 👉 Cost = O(V) (very slow for large vocabulary)
 
+- 📌 Parameters:
+- Two matrices:
+    - Input embedding: V×d
+    - Output embedding: V×d
+> Total=2×V×d
+
 ## 🔷 2. Negative Sampling (Optimization Trick)
+- 📌 Problem:
+Softmax over large vocabulary is expensive
 - Instead of updating all words in vocabulary, update:
     1 positive example
     k negative (random) examples
