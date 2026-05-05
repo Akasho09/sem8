@@ -131,3 +131,37 @@ No direct semantic relation
 - ✔ Same concept → ordered linguistic sequence
 
 
+# collocation + n-gram features
+1. 🔹 Step 2: Collocation Features (Position-based)
+- [w−3​,w−2​,w−1​,w+1​,w+2​,w+3​]
+=[in,a,long,at,the,checkout]
+
+2. 🔹 Step 3: Include N-gram Features
+- 🔸 Bigrams (around "line")
+(a, long)
+(long, line)
+(line, at)
+(at, the)
+(the, checkout)
+
+- 🔸 Trigrams
+(in, a, long)
+(a, long, line)
+(long, line, at)
+(line, at, the)
+(at, the, checkout)
+
+3. 🔹 Step 4: Final Feature Vector
+- ✅ Collocation (word-level)
+[in,a,long,at,the,checkout]
+
+- ✅ Bigrams
+[(a,long),(long,line),(line,at),(at,the),(the,checkout)]
+
+- ✅ Trigrams
+[(in,a,long),(a,long,line),(long,line,at),(line,at,the),(at,the,checkout)]
+
+- ✔ Collocation → nearby +-3 words
+- ✔ N-grams → start from -3 and make bi and trigrams include word itself.
+
+
