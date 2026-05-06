@@ -40,8 +40,8 @@ Vocabulary = [cat, dog, apple, car]
 | Efficiency | Low                 | High             |
 
 - 💡 Key Insight (Exam Line)
-👉 Sparse vectors represent presence of words,
-👉 Dense vectors represent meaning of words.
+    👉 Sparse vectors represent presence of words,
+    👉 Dense vectors represent meaning of words.
 
 # Word-context matrix and Pointwise Mutual Information (PMI) and Cosine Similarity
 🔹 Given Corpus
@@ -55,16 +55,16 @@ For each word → take 2 words left + 2 words right
 2. 🔹 Step 2: Focus words → cat and dog
 - 🔸 Context of cat
 - From sentences:
-“The cat sat on the mat” → {The, sat, on}
-“The cat and the dog are friends” → {The, and, the}
+    “The cat sat on the mat” → {The, sat, on}
+    “The cat and the dog are friends” → {The, and, the}
 - 👉 Combined context words:
-{the,sat,on,and}
+    {the,sat,on,and}
 
 - 🔸 Context of dog
 “The dog played in the yard” → {The, played, in}
 “The cat and the dog are friends” → {the, and, are}
 - 👉 Combined:
-{the,played,in,and,are}
+    {the,played,in,and,are}
 
 3. 🔹 Step 3: Vocabulary (Context words)
 V={the,sat,on,and,played,in,are}
@@ -93,7 +93,7 @@ Rare co-occurrence → low/negative
 
 7. 🔹 Step 7: Common Dimensions
 - Common context words:
-{the,and}
+    {the,and}
 
 8. 🔹 Step 8: Cosine Similarity
 > cos(θ)= cat⋅dog / ∣cat∣∣dog∣
@@ -148,8 +148,8 @@ etc.
 3. 🔹 Final Training Dataset
 > Dataset={(wt​,wc​,y)}
 - Where:
-y=1 → positive
-y=0 → negative
+    y=1 → positive
+    y=0 → negative
 
 ## 🔹 (ii) Cross-Entropy Loss (Skip-gram with Negative Sampling)
 - 🔸 Objective

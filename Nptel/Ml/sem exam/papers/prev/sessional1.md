@@ -1,31 +1,3 @@
-# Matrix Formulation (Normal Equation) 👇
-| x₁ | x₂ | y  |
-| -- | -- | -- |
-| 1  | 3  | 6  |
-| 2  | 4  | 8  |
-| 3  | 5  | 10 |
-
-1. 🔷 Step 1: Model Form
-Multiple Linear Regression:
-> y=β0​+β1​x1​+β2​x2​
-
-2. 🔷 Step 2: Matrix Representation
-Design Matrix X
-(Add bias column of 1s)
-- X=
-  [ ​1 1 3 
-    1 2 4
-    1 3 5 ]
-
-- Output Vector Y
-Y=
-[ ​6
-  8
-  10​ ]
-​
-3. 🔷 Step 3: Normal Equation
-> β=(X^T* X)^−1 X^T*Y
-
 # Find the approximate linear regression line using Gradient Descent technique for the
 following linear regression model. Assume the initial value of mo=l0, bo=0 and learning
 rate -0.1. (NOTE :Apply only two iteration)

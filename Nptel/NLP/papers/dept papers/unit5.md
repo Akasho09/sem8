@@ -38,11 +38,11 @@
 
 ### 🔥 Explanation
 1. IR only finds documents
-It tells where information might be
-It does NOT extract exact facts
+    It tells where information might be
+    It does NOT extract exact facts
 
 2. No structured output
-IR returns full text, not usable structured data
+    IR returns full text, not usable structured data
 
 3. Lacks deep understanding
 Cannot identify entities or relationships
@@ -59,8 +59,8 @@ What type it is (PER, ORG, LOC, etc.)
 
 1. 🔹 1. IO Scheme (Inside–Outside)
 - 📌 Tags:
-I-XXX → Inside an entity
-O → Outside any entity
+    I-XXX → Inside an entity
+    O → Outside any entity
 - 📌 Example:
 Sentence:
 👉 “Barack Obama visited India”
@@ -77,9 +77,9 @@ Sentence:
 
 2. BIO Scheme (Begin–Inside–Outside)
 - 📌 Tags:
-B-XXX → Beginning of entity
-I-XXX → Inside entity
-O → Outside
+    B-XXX → Beginning of entity
+    I-XXX → Inside entity
+    O → Outside
 - 
 👉 “Barack Obama visited India”
 | Word    | Tag   |

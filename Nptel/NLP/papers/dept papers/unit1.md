@@ -39,7 +39,7 @@ The quick brown fox never jumps over the sleeping cat.”
 “The quick brown fox jumps over the sleeping cat”
 > P=P(The)⋅P(quick∣The)⋅P(brown∣The,quick)⋅P(fox∣quick,brown)⋅P(jumps∣brown,fox)⋅P(over∣fox,jumps)⋅P(the∣jumps,over)⋅P(sleeping∣over,the)⋅P(cat∣the,sleeping)
 > P=2/3​×1/3​=1/33​≈0.333
-- start from word 0 , which isnt a case if directly probability is needed to be calculated.
+> start from word 0 , which isnt a case if directly probability is needed to be calculated.
 
 3. (iii) 
 - Perplexity (PP) measures how well a language model predicts a sequence of words.

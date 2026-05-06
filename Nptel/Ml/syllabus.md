@@ -1,5 +1,6 @@
 # PYQS
 
+![alt text](image-1.png)
 COURSE LAYOUT
 Week 0: Probability Theory, Linear Algebra, Convex Optimization - (Recap)
 Week 1: Introduction: Statistical Decision Theory - Regression, Classification, Bias Variance
