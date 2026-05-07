@@ -380,6 +380,7 @@ y={ 1  ​yin​>0
 ```
 - Weight update:
 > wi(new)=wi(old)+α(t−y)xi
+- t−y= actual - prediction value of w.
 
 - Bias update:
 > b(new)=b(old)+α(t−y)
@@ -426,5 +427,123 @@ Input:
 w1=0.8,w2=0.8,b=0.7
 	​
 # Perceptron and Multilayer Perceptron (MLP)
+1. Perceptron Model
+- A Perceptron is the simplest type of artificial neural network used for binary classification problems.
+- It was introduced by Frank Rosenblatt in 1958.
+- Structure of Perceptron
+    - A perceptron contains:
+        - Input layer
+        - Weights
+        - Summation unit
+        - Activation function
+        - Output
+- Working of Perceptron
+- The perceptron computes a weighted sum of inputs:
+> yin=b+(i=1->n)∑wi.xi
+- Where:
+    - xi = inputs
+    - wi = weights
+    - b = bias
 
+- Activation Function
+The perceptron uses a step activation function:
+```yml
+y={ 1   ​yin​≥0
+    0   yin​<0​  }
+```
+- Diagram of Perceptron
+```yml
+x1 ----\
+x2 ----- > Summation + Activation → Output
+x3 ----/
+```
+- Learning Rule
+- Weights are updated using:
+    > 𝑤i​(new)=wi​(old)+α(t−y)xi​
+- Where:
+    α = learning rate
+    t = target output
+    y = predicted output
+- Example: AND Gate Using Perceptron
+| (x_1) | (x_2) | Output |
+| ----- | ----- | ------ |
+| 0     | 0     | 0      |
+| 0     | 1     | 0      |
+| 1     | 0     | 0      |
+| 1     | 1     | 1      |
 
+- Advantages of Perceptron
+    Simple and fast
+    Easy implementation
+    Works for linearly separable problems
+- Limitations of Perceptron
+    Cannot solve nonlinear problems
+    Fails for XOR gate
+    Uses hard threshold activation
+
+2. 2. Multilayer Perceptron (MLP)
+- A Multilayer Perceptron is an advanced neural network containing:
+    - Input layer
+    - One or more hidden layers
+    - Output layer
+- MLP overcomes the limitations of a single perceptron.
+- Structure of MLP
+> Input Layer → Hidden Layer(s) → Output Layer
+- Each neuron is connected using weighted links.
+- Working of MLP
+1. Step 1: Forward Propagation
+Inputs move through layers.
+Each neuron computes:
+> z=∑wi​xi​+b
+- Activation functions like:
+    Sigmoid
+    ReLU
+    Tanh
+are applied.
+- Sigmoid Activation
+> σ(z)=1​/1+e^−z
+
+2. Step 2: Compute Error
+Difference between actual and predicted output.
+
+3. Step 3: Backpropagation
+Error is propagated backward to update weights.
+Gradient descent is used to minimize loss.
+
+- Example: XOR Gate Using MLP
+XOR truth table:
+| (x_1) | (x_2) | Output |
+| ----- | ----- | ------ |
+| 0     | 0     | 0      |
+| 0     | 1     | 1      |
+| 1     | 0     | 1      |
+| 1     | 1     | 0      |
+- A single perceptron cannot solve XOR because it is not linearly separable.
+An MLP with hidden layers can solve it successfully.
+
+- Advantages of MLP
+    Solves nonlinear problems
+    Learns complex patterns
+    High prediction accuracy
+    Widely used in deep learning
+
+- Disadvantages of MLP
+    Computationally expensive
+    Requires large training data
+    Training may take longer
+
+- Applications of MLP
+    Image recognition
+    Speech recognition
+    Medical diagnosis
+    NLP
+    Recommendation systems
+
+| Feature      | Perceptron         | Multilayer Perceptron |
+| ------------ | ------------------ | --------------------- |
+| Layers       | Single layer       | Multiple layers       |
+| Hidden Layer | No                 | Yes                   |
+| Problem Type | Linear             | Linear + Nonlinear    |
+| Activation   | Step function      | Sigmoid/ReLU/Tanh     |
+| XOR Problem  | Cannot solve       | Can solve             |
+| Learning     | Simple update rule | Backpropagation       |
