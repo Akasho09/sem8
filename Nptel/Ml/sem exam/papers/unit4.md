@@ -16,8 +16,8 @@
 The sigmoid function converts any real value into a probability range:
 > 0≤hθ​(x)≤1
 - Decision Rule
-If probability ≥0.5 → Class 1
-Else → Class 0
+    If probability ≥0.5 → Class 1
+    Else → Class 0
 
 ### Cost Function in Logistic Regression
 - Mean Squared Error is not suitable because logistic regression is nonlinear.
@@ -33,7 +33,7 @@ Else → Class 0
 - Gradient Descent is used to minimize the cost function by updating weights iteratively.
 - Parameter Update Rule
 - For each parameter:
-> θj​:=θj​−α∂*​∂J(θ)​/θj
+> θj​:=θj​−α*​∂J(θ)​/∂θj
 - Where:
     - α = learning rate
 - Gradient for logistic regression:
@@ -87,9 +87,9 @@ Update weights using gradient descent rule.
 
 - ADALINE Learning Rule
 - Output:
-> yin​=b+w1​x1​+w2​x2​
+    > yin​=b+w1​x1​+w2​x2​
 - Weight update:
-> wi​(new)=wi​(old)+α(t−yin​)xi​
+    > wi​(new)=wi​(old)+α(t−yin​)xi​
 - Bias update:
 > b(new)=b(old)+α(t−yin​)
 
@@ -136,11 +136,11 @@ Pattern 1
 
 1. Step 1: Represent Patterns in Bipolar Form
 - Given:
-“+” → +1
-Empty box → −1
+    “+” → +1
+    Empty box → −1
 - Target:
-Pattern “I” → t=1
-Pattern “O” → t=−1
+    Pattern “I” → t=1
+    Pattern “O” → t=−1
 
 - Pattern 1 : “I”
 Matrix:
@@ -227,6 +227,8 @@ Reshape into 3×3:
          -2 2 -2
          0  0  0]
 
+- convert to vectors and add.
+
 # Logistic Regression Using Perceptron Model
 - The Perceptron Model is one of the earliest neural network models used for binary classification.
 - Logistic Regression and Perceptron are closely related because both:
@@ -234,8 +236,8 @@ Reshape into 3×3:
     - Perform binary classification
     - Learn decision boundaries
 - The main difference is:
-Perceptron uses a hard threshold activation.
-Logistic Regression uses a sigmoid activation and probability output.
+    Perceptron uses a hard threshold activation.
+    Logistic Regression uses a sigmoid activation and probability output.
 
 - Perceptron Model
     - A perceptron computes:
@@ -245,11 +247,11 @@ Logistic Regression uses a sigmoid activation and probability output.
     wi = weights
     w0 = bias
 - Activation Function
-In logistic regression, sigmoid activation is used instead of step activation.
+    In logistic regression, sigmoid activation is used instead of step activation.
 - Sigmoid function:
-> σ(z)=1/1+e^−z
+    > σ(z)=1/1+e^−z
 - Output range:
-> 0≤σ(z)≤1
+    > 0≤σ(z)≤1
 - This output represents probability.
 - Decision Rule
     If σ(z)≥0.5 → Class 1
@@ -322,8 +324,7 @@ Continue for multiple epochs until convergence.
 The neuron output is:
 ```yml
 y={ 1. ​if ∑wi​.xi​≥θ 
-    0. otherwise​
-  } 
+    0. otherwise​  } 
 ```
 - Where:
     wi = weights
@@ -334,7 +335,7 @@ y={ 1. ​if ∑wi​.xi​≥θ
 - Choose:
     w1​=−1,w2​=−1
 - Threshold:
-    θ=−0.5
+>   θ=−0.5
 
 - Verification
 - Case 1
@@ -375,8 +376,7 @@ x1​=1, x2​=1
 - Activation:
 ```yml
 y={ 1  ​yin​>0 
-    0  yin​≤0​
-  }
+    0  yin​≤0​   }
 ```
 - Weight update:
 > wi(new)=wi(old)+α(t−y)xi
@@ -446,11 +446,11 @@ w1=0.8,w2=0.8,b=0.7
     - b = bias
 
 - Activation Function
-The perceptron uses a step activation function:
-```yml
-y={ 1   ​yin​≥0
-    0   yin​<0​  }
-```
+    - The perceptron uses a step activation function:
+    ```yml
+    y={ 1   ​yin​≥0
+        0   yin​<0​  }
+    ```
 - Diagram of Perceptron
 ```yml
 x1 ----\

@@ -57,10 +57,10 @@ PC1  =[ 0.316
 # Fisher Discriminant Ratio (FDR)
 Fisher Discriminant Ratio is a measure used in Linear Discriminant Analysis (LDA) to evaluate how well two classes are separated.
 - It tries to:
-Maximize distance between class means
-Minimize spread within each class
+    Maximize distance between class means
+    Minimize spread within each class
 - Mathematically:
-> J(w)= wT.SB.w/wT.SW.w 
+    > J(w)= wT.SB.w/wT.SW.w 
 - Where:
     - SB = Between-class scatter matrix
     - SW = Within-class scatter matrix
@@ -306,8 +306,9 @@ Measures difference between high-dimensional and low-dimensional distributions.
 
 2. Loss Function
 Used in:
-Variational Autoencoders (VAEs)
-Probabilistic models
+    Variational Autoencoders (VAEs)
+    Probabilistic models
+
 3. Distribution Comparison
 Helps compare predicted and actual probability distributions.
 

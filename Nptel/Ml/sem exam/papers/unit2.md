@@ -53,13 +53,11 @@ y^​=mx+b
 1. Iteration 1
 - Initial:
 m=10,b=0
-
 | x | y | (ŷ)      |      (ŷ-y) |
 | - | - | -------- | ---------- |
 | 2 | 4 | 20       | 16         |
 | 3 | 6 | 30       | 24         |
 | 5 | 8 | 50       | 42         |
-
 
 - Compute Gradients
     - ∂J/dm​=2/3​[(2)(16)+(3)(24)+(5)(42)]
@@ -86,13 +84,13 @@ m=−10.933,b=−5.467
 - y=24.809x+4.115
 
 # a) Stochastic Gradient Descent (SGD)
-- Stochastic Gradient Descent is an optimization algorithm used to minimize the cost function in machine learning models.
+- Stochastic Gradient Descent is an `optimization algorithm `used to minimize the `cost function` in machine learning models.
 - Unlike Batch Gradient Descent, SGD updates model parameters using one training example at a time.
 - Working of SGD
     - For each training sample:
-    - Compute prediction.
-    - Calculate error.
-    - Update weights immediately.
+        - Compute prediction.
+        - Calculate error.
+        - Update weights immediately.
 - Weight update rule:
 > w:=w−η∇J(w)
 - Where:
@@ -101,8 +99,8 @@ m=−10.933,b=−5.467
     ∇J(w) = gradient of cost function
 - Characteristics
     Faster updates
-    Requires less memory
-    Suitable for large datasets
+    `Requires less memory`
+    `Suitable for large datasets`
     Noisy but faster convergence
 - Advantages
     Efficient for huge datasets
@@ -117,13 +115,13 @@ m=−10.933,b=−5.467
     Online Learning Systems
 
 # (b) Softmax Regression
-- Softmax Regression is an extension of Logistic Regression used for multi-class classification problems.
+- Softmax Regression is an `extension of Logistic Regression` used for `multi-class` classification problems.
 - It predicts probabilities for multiple classes.
 - Softmax Function
-- P(y=i)=​e^zi​​ /(j=1->k)∑​e^zj 
+ >   - P(y=i)=​e^zi​​ /(j=1->k)∑​e^zj 
 - Where:
-zi = score for class i
-k = number of classes
+    zi = score for class i
+    k = number of classes
 - Characteristics
     Output probabilities sum to 1.
     Used when classes are mutually exclusive.
@@ -145,11 +143,11 @@ k = number of classes
 
 # (c) Elastic Net Regression
 - Elastic Net Regression combines:
-L1 Regularization (Lasso)
-L2 Regularization (Ridge)
+    L1 Regularization (Lasso)
+    L2 Regularization (Ridge)
 - It helps improve prediction accuracy and feature selection.
 - Cost Function
-> J(θ)=RSS+λ1​∑∣θ∣+λ2​∑θ^2
+    > J(θ)=RSS+λ1​∑∣θ∣+λ2​∑θ^2
 - Where:
     - RSS = Residual Sum of Squares
     - L1 term encourages sparsity
@@ -177,15 +175,15 @@ L2 Regularization (Ridge)
     - 0≤R^2≤1
 - Higher value indicates better fit.
 - Limitation of R2
-- Adding more predictors always increases or maintains R2, even if predictors are irrelevant.
+    - Adding more predictors always increases or maintains R2, even if predictors are irrelevant.
 
 2. Adjusted R-Squared
 Adjusted R2 modifies R2 by considering the number of predictors.
 - Formula:
 > Adjusted R2=1−(1−R^2)n−1​/n−p−1 
 - Where:
-n = number of observations
-p = number of predictors
+    n = number of observations
+    p = number of predictors
 
 | Feature                             | R-Squared         | Adjusted R-Squared  |
 | ----------------------------------- | ----------------- | ------------------- |

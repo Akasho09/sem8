@@ -20,9 +20,9 @@
     - Adapts easily to new data.
     - Effective for complex decision boundaries.
 - Disadvantages
-- High memory requirement.
-- Slow prediction for large datasets.
-- Sensitive to irrelevant features and noise.
+    - High memory requirement.
+    - Slow prediction for large datasets.
+    - Sensitive to irrelevant features and noise.
 
 2. Model-Based Learning
 - Model-based learning creates a generalized mathematical model from training data and uses it for predictions.
@@ -69,34 +69,34 @@
     J = cost function
 - Effect on Cost Function
 1. Very Small Learning Rate
-Cost decreases very slowly.
-Training takes more time.
-May get stuck before reaching optimum.
+    Cost decreases very slowly.
+    Training takes more time.
+    May get stuck before reaching optimum.
 - Result:
-Slow convergence.
-High training time.
+    Slow convergence.
+    High training time.
 
 2. Optimal Learning Rate
-Cost decreases smoothly and efficiently.
-Faster convergence toward minimum cost.
+    Cost decreases smoothly and efficiently.
+    Faster convergence toward minimum cost.
 - Result:
-Stable and efficient training.
+    Stable and efficient training.
 
 3. Very Large Learning Rate
-Weight updates become too large.
-Cost function may oscillate or diverge instead of decreasing.
+    Weight updates become too large.
+    Cost function may oscillate or diverge instead of decreasing.
 - Result:
 Training becomes unstable.
 Model may never converge.
 
 - Effect on Weights
 1. Small Learning Rate
-Small weight updates.
-Gradual learning.
+    Small weight updates.
+    Gradual learning.
 
 2. Large Learning Rate
-Large jumps in weight values.
-Can overshoot optimal weights.
+    Large jumps in weight values.
+    Can overshoot optimal weights.
 
 - Graphical Understanding
 Small learning rate → tiny steps toward minimum.
@@ -135,11 +135,11 @@ Proper learning rate → reaches minimum efficiently.
 - Underfitting occurs when the model is too simple to capture the underlying pattern of data.
 - It performs poorly on both training and testing data.
 - Characteristics
-Low training accuracy
-Low testing accuracy
-Model fails to learn patterns
+    Low training accuracy
+    Low testing accuracy
+    Model fails to learn patterns
 - Example
-A student studies only chapter titles and cannot answer exam questions properly.
+    A student studies only chapter titles and cannot answer exam questions properly.
 - Causes
     Very simple model
     Insufficient training
@@ -216,7 +216,7 @@ Machine Learning is a subset of AI that allows systems to learn automatically fr
 1. Supervised Learning
 - The model learns using labeled data.
 - Goal
-- Predict output from input data.
+    - Predict output from input data.
 - Examples
     Email spam detection
     House price prediction
