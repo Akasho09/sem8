@@ -1,4 +1,6 @@
 # PBFT (Practical Byzantine Fault Tolerance) — Detailed Notes
+- PBFT (Practical Byzantine Fault Tolerance) is a distributed consensus algorithm designed to allow a network of nodes to reach agreement even when some nodes behave maliciously or unpredictably.
+
 1. Byzantine Fault
 - A Byzantine Fault occurs when a node in a distributed system behaves unpredictably or maliciously.
 - A faulty node may:
@@ -59,7 +61,7 @@ R1​,R2​,R3​,R4​
 ## 4. PBFT Phases
 - PBFT consensus occurs in multiple stages.
 1. Phase 1: Pre-Prepare
-Primary (leader) receives request from client.
+- Primary (leader) receives request from client.
 - Primary assigns:
     sequence number,
     view number.
@@ -90,11 +92,9 @@ Ensures majority agreement on request order.
 Replicas multicast:
 > COMMIT(v,n,i)
 - Requirement
-    - Replica commits after receiving:
-    2f+1
-    matching COMMIT messages.
+    - Replica commits after receiving: 2f+1 matching COMMIT messages.
 - Purpose
-Guarantees all honest replicas execute same request.
+    - Guarantees all honest replicas execute same request.
 
 ## 5. Safety Property
 - No two honest replicas decide differently.
@@ -106,7 +106,7 @@ Guarantees all honest replicas execute same request.
 
 6. Liveness Property
 - System eventually progresses.
-- Meaning
+- Meaning 
     - Requests are eventually processed even if some nodes fail.
 - Achieved Using
     timeouts,
@@ -136,7 +136,7 @@ Used when primary/leader becomes faulty.
         no progress.
 - Process
 1. Step 1
-Replicas send:
+- Replicas send:
 VIEW-CHANGE 
 message
 
