@@ -81,6 +81,12 @@ Ensures all replicas receive the same ordered request.
     message authenticity.
 - Then broadcast:
 > PREPARE(v,n,d,i)
+| Symbol | Meaning                          |
+| ------ | -------------------------------- |
+| ( v )  | View number                      |
+| ( n )  | Sequence number                  |
+| ( d )  | Digest (hash of request/message) |
+| ( i )  | Replica/node ID                  |
 - Requirement
     - Replica enters prepared state after receiving:
         2f+1
